@@ -1,0 +1,21 @@
+<div class="modal-header">
+    <span></span>
+    <div class="row">
+        <div class="col-lg-9">
+            <h4><strong>14 Items below will be cashed out into your wallet</strong></h4>
+        </div>
+        <div class="col-lg-3">
+            <span class="custom_h4">Cash-out Value</span>
+            <span class="custom_h2"> $ 288</span>
+        </div>
+    </div>
+</div>
+<div class="modal-body">
+    <div ng-repeat="slot in slots" class="slot">
+        <img src="images/{{slot.image}}.jpg"/>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-default btn-danger" ng-click="cancel()">Cancel</button>
+    <button class="btn btn-default btn-success" ng-click="ok()">OK</button>
+</div>

@@ -1,0 +1,70 @@
+<div class="container-fluid">
+    <div class="row spin-panel">
+        <div id="slot-machine-group" class="slot-machine-group">
+            <div id="machine1" class="slotMachine" options="{active:0,delay:500,step:72}">
+                <div class="slot slot1"></div>
+                <div class="slot slot2"></div>
+                <div class="slot slot3"></div>
+                <div class="slot slot4"></div>
+                <div class="slot slot5"></div>
+                <div class="slot slot6"></div>
+            </div>
+            <div id="machine2" class="slotMachine" options="{active:1,delay:500,step:72}">
+                <div class="slot slot1"></div>
+                <div class="slot slot2"></div>
+                <div class="slot slot3"></div>
+                <div class="slot slot4"></div>
+                <div class="slot slot5"></div>
+                <div class="slot slot6"></div>
+            </div>
+            <div id="machine3" class="slotMachine" options="{active:2,delay:500,step:72}">
+                <div class="slot slot1"></div>
+                <div class="slot slot2"></div>
+                <div class="slot slot3"></div>
+                <div class="slot slot4"></div>
+                <div class="slot slot5"></div>
+                <div class="slot slot6"></div>
+            </div>
+            <div id="machine4" class="slotMachine" options="{active:3,delay:500,step:72}">
+                <div class="slot slot1"></div>
+                <div class="slot slot2"></div>
+                <div class="slot slot3"></div>
+                <div class="slot slot4"></div>
+                <div class="slot slot5"></div>
+                <div class="slot slot6"></div>
+            </div>
+            <div id="machine5" class="slotMachine" options="{active:4,delay:500,step:72}">
+                <div class="slot slot1"></div>
+                <div class="slot slot2"></div>
+                <div class="slot slot3"></div>
+                <div class="slot slot4"></div>
+                <div class="slot slot5"></div>
+                <div class="slot slot6"></div>
+            </div>
+            <div class="slotMachineBtn">
+                <button id="slotMachineBtn" class="btn btn-default btn-success btn-lg">Spin</button>
+            </div>
+        </div>
+    </div>
+    <div class="row package-panel">
+        <div class="col-lg-3">
+            <div>
+                <span class="package-text"><i class="fa fa-shopping-cart"></i>14 Items in package</span>
+            </div>
+            <div>
+                <span class="package-label">Reward Dollars</span>
+                <span class="package-label-value">$ 1,199</span>
+            </div>
+            <div>
+                <span class="package-label">Package Value</span>
+                <span class="package-label-value">$ 154</span>
+            </div>
+            <div class="pull-right cash-out">
+                <button id="cash-out" class="btn btn-default btn-primary btn-lg" ng-click="openCashOutModal()">Cash out</button>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <div id="package" class="package"></div>
+        </div>
+    </div>
+</div>

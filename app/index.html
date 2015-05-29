@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="virtualGamingWorld">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>VirtualGamingWorld</title>
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css"/>
+  <link rel="stylesheet" href="styles/slot.css"/>
+  <!-- endbuild -->
+</head>
+<body ng-controller="RootCtrl">
+<!--header-->
+<div ng-include="'views/header/index-header.tpl.html'" ng-show="!showMainHeader"></div>
+<div ng-include="'views/header/main-header.tpl.html'" ng-show="showMainHeader"></div>
+<!--main body-->
+<div class="wrap">
+  <div ng-class="{true: 'ng-view-index', false: 'ng-view-main'}[!showMainHeader]" ng-view></div>
+</div>
+<!--footer-->
+<div ng-include="'views/footer/index-footer.tpl.html'" ng-show="!showMainHeader"></div>
+<div ng-include="'views/footer/main-footer.tpl.html'" ng-show="showMainHeader"></div>
+
+
+<!-- build:js(.) scripts/oldieshim.js -->
+<!--[if lt IE 9]>
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/json3/lib/json3.js"></script>
+<![endif]-->
+<!-- endbuild -->
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/library/jquery.slotmachine.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/root.ctrl.js"></script>
+<script src="scripts/controllers/welcome.ctrl.js"></script>
+<script src="scripts/controllers/main.ctrl.js"></script>
+<script src="scripts/directives/slotMachine.js"></script>
+<script src="scripts/controllers/cashOut.ctrl.js"></script>
+<!-- endbuild -->
+</body>
+</html>

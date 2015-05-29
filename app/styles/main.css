@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #fff;
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+}
+
+.ng-view-index {
+    overflow: visible;
+    padding-bottom: 60px;
+    padding-top: 50px;
+}
+
+.ng-view-main {
+    overflow: visible;
+    padding-bottom: 75px;
+    padding-top: 128px;
+}
+
+@media ( max-width: 979px) {
+    .navbar-fixed-top, .navbar-fixed-bottom {
+        position: fixed;
+    }
+}
+
+@media ( max-width: 767px) {
+    .navbar-fixed-top, .navbar-fixed-bottom {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media ( max-width: 767px) {
+    footer {
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+}
+
+footer.index {
+    background-color: #abaaa9;
+    background-image: linear-gradient(bottom, rgb(156, 154, 156) 1%, rgb(184, 184, 184) 60%);
+    background-image: -o-linear-gradient(bottom, rgb(156, 154, 156) 1%, rgb(184, 184, 184) 60%);
+    background-image: -moz-linear-gradient(bottom, rgb(156, 154, 156) 1%, rgb(184, 184, 184) 60%);
+    background-image: -webkit-linear-gradient(bottom, rgb(156, 154, 156) 1%, rgb(184, 184, 184) 60%);
+    background-image: -ms-linear-gradient(bottom, rgb(156, 154, 156) 1%, rgb(184, 184, 184) 60%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.01, rgb(156, 154, 156)), color-stop(0.6, rgb(184, 184, 184)));
+    position: relative;
+    margin-top: -60px;
+    clear: both;
+    height: 60px;
+    padding: 0px;
+}
+
+footer.main {
+    background-color: #abaaa9;
+    background-image: linear-gradient(bottom, rgb(156, 154, 156) 1%, rgb(184, 184, 184) 60%);
+    background-image: -o-linear-gradient(bottom, rgb(156, 154, 156) 1%, rgb(184, 184, 184) 60%);
+    background-image: -moz-linear-gradient(bottom, rgb(156, 154, 156) 1%, rgb(184, 184, 184) 60%);
+    background-image: -webkit-linear-gradient(bottom, rgb(156, 154, 156) 1%, rgb(184, 184, 184) 60%);
+    background-image: -ms-linear-gradient(bottom, rgb(156, 154, 156) 1%, rgb(184, 184, 184) 60%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.01, rgb(156, 154, 156)), color-stop(0.6, rgb(184, 184, 184)));
+    position: relative;
+    margin-top: -75px;
+    clear: both;
+    height: 75px;
+    padding: 0px;
+}
+
+.nav > li > a.vertical-line {
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+header.navbar-top-line {
+    border-top: 4px #cb7709 solid;
+}
+
+.navbar-custom-bg {
+    background-color: #bab5ad;
+    background-image: linear-gradient(to bottom, #bab5ad 0, #bab5ad 100%);
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #000000;
+}
+
+footer .row {
+    margin-top: 15px;
+}
+
+footer ul {
+    float: right;
+}
+
+footer ul li {
+    float: left;
+    display: block;
+    margin-left: 30px;
+}
+
+footer.main ul li a {
+    color: #000000;
+}
+
+.abs-div {
+    position: absolute;
+}
+
+.spin-panel {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.package-panel {
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.rewards h1 {
+    margin-top: 50px;
+}
+
+.right-border {
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+    padding-bottom: 24px;
+}
+
+.menu-box {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.menu-box .active i {
+    color: #0086B3;
+}
+
+.menu-box .active::after {
+    content: url("../images/nav-active.png");
+    display: block;
+    height: 12px;
+    width: 6px;
+    position: absolute;
+    margin: -6px 0 0 35px;
+}
+
+footer.main ul {
+    float: left;
+    margin-top: 18px;
+}
+
+footer.main ul li.active::after {
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    content: url("../images/nav-active.png");
+    display: block;
+    height: 12px;
+    width: 6px;
+    position: absolute;
+    margin: -57px 0 0 35px;
+}
+
+footer.main ul li.active i{
+    color: #0086B3;
+}
+
+.menu-right > ul {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.ng-view-main .container-fluid {
+    max-height: 736px;
+}
+
+.package-label {
+    font-size: 18px;
+}
+
+.package-label-value {
+    font-size: 18px;
+    float: right;
+}
+
+.cash-out {
+    padding-top: 20px;
+}
+
+.package-text {
+    font-size: 25px;
+}
+
+.package-text i {
+    margin: 25px 5px 25px 0;
+}
+
+svg {
+    display: none;
+}
+
+.package-panel div.col-lg-3 {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 25px;
+}
+
+.takeBtn {
+    margin-top: 150px;
+    opacity: 0.99;
+    position: fixed;
+    margin-left: 80px;
+}
+
+.moveSlot {
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .cash_out .modal-dialog {
+        width: 1080px;
+        margin: 150px auto;
+    }
+
+    .cash_out .modal-content {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    .cash_out .custom_h4 {
+        font-size: 20px;
+    }
+
+    .cash_out .custom_h2 {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+
+    .cash_out .slot {
+        display: inline-block;
+    }
+
+    .cash_out .slot img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cash_out .modal-body {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 480px;
+    }
+}
